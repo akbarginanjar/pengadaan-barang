@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\BarangController;
+use App\Http\Controllers\API\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('barang', BarangController::class);
+Route::get('barang', [ApiController::class, 'barang']);
+
+Route::get('supplier', [ApiController::class, 'supplier']);
+
+Route::get('barang-masuk', [ApiController::class, 'barangmasuk']);
+
+Route::get('barang-keluar', [ApiController::class, 'barangkeluar']);
+
+Route::get('user', [ApiController::class, 'user']);
+
+Route::get('satuan', [ApiController::class, 'satuan']);
+
+Route::get('jenis', [ApiController::class, 'jenis']);
