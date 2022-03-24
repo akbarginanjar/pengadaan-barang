@@ -66,7 +66,7 @@ class ApiController extends Controller
             ->get();
         return response()->json([
             'success' => true,
-            'message' => 'data artikel',
+            'message' => 'data barang',
             'data' => $barang,
         ], 200);
 }
