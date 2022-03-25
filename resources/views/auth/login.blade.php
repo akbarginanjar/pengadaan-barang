@@ -21,7 +21,7 @@
                 <div class="panel-heading text-center">LOGIN</div>
                 <div class="panel-body">
                     <div class="text-center">
-                        <h3>Pengadaan Barang</h3>
+                        <img src="img/logo.png" width="300">
                     </div><br>
                     <form role="form" action="{{ route('login') }}" method="POST">
                         @csrf
